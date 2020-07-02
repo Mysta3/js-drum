@@ -82,9 +82,9 @@
       }
 
       //select all with key class
-      const key = document.querySelector('.key');
+      const keys = document.querySelectorAll('.key');
       //call remove transition function for each key
-      key.forEach((key) =>
+      keys.forEach((key) =>
         key.addEventListener('transitionend', removeTransition)
       );
 
